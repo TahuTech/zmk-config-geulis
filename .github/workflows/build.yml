@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          path: config/
+          path: zmk-config/
       - name: Cache west modules
         uses: actions/cache@v2
         env:
@@ -30,7 +30,7 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - name: Initialize workspace (west init)
-        run: west init -l config
+        run: west init -l zmk-csonfig
       - name: Update modules (west update)
         run: west update
       - name: Export zephyr CMake package (west zephyr-export)
