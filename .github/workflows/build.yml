@@ -30,7 +30,7 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - name: Initialize workspace (west init)
-        run: west init -l zmk-csonfig
+        run: west init -l zmk-config
       - name: Update modules (west update)
         run: west update
       - name: Export zephyr CMake package (west zephyr-export)
