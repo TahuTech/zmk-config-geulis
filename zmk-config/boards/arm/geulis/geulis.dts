@@ -71,6 +71,7 @@
 // };
 
 &spi0 {
+	status = "okay";
 	compatible = "nordic,nrf-spim";
 	status = "okay";
 	sck-pin = <19>;
@@ -90,7 +91,7 @@
 
 &uart0 {
 	compatible = "nordic,nrf-uarte";
-	tx-pin = <19>;
+	tx-pin = <13>;
 	rx-pin = <25>;ß
 };
 
