@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/karnadii
   projects:
     - name: zmk
-      remote: karnadii
-      revision: fix-power
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: zmk-config
